@@ -20,9 +20,13 @@ public class ProjectHeranca {
        System.out.println("Aluno: " + al.nome + "\nEndereço: " + al.end + "\nTelefone: " 
                + al.tel + "\nCPF: " + al.cpf + "\n Curso:" + al.curso);
        
+       al.getTirarCopia(0);
+       
       Aluno all = new Aluno();
         
       all.setMedia(8.5, 7.4, 6.5);
+      
+      System.out.println("--------------------------------------------------------");
       
       
       Professor prof = new Professor();
@@ -30,10 +34,12 @@ public class ProjectHeranca {
       prof.end = JOptionPane.showInputDialog("Informe o Endereço: ");
       prof.tel = JOptionPane.showInputDialog("Informe o Telefone: ");
       prof.cpf = JOptionPane.showInputDialog("Informe o CPF: ");
-      prof.cursoP = JOptionPane.showInputDialog("Informe o curso: ");
+      prof.curso = JOptionPane.showInputDialog("Informe o curso: ");
       
       System.out.println("Professor: " + prof.nome + "\n Endereço: " + prof.end + "\n Telefone: "
-              + prof.tel + "\n CPF: " + prof.cpf + "\n Curso: " + prof.cursoP);
+              + prof.tel + "\n CPF: " + prof.cpf + "\n Curso: " + prof.curso);
+      
+     
        
       
       Professor pff = new Professor();

@@ -11,6 +11,8 @@ public class Pessoa {
     public String cpf;
     private double copias;
     private String categoria;
+    private int qtd;
+    private double preco;
     
     public Pessoa(){
         
@@ -22,6 +24,14 @@ public class Pessoa {
         this.cpf = cpf;
         
     }
+    
+    public double getTirarCopia(int qtd){
+        copias = qtd * preco;
+        
+       
+        
+        return copias;
+    }
 
 
     
@@ -29,9 +39,8 @@ public class Pessoa {
     }
    
         
-        
-        
-}    
+               
+   
             
             
             
